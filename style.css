@@ -20,10 +20,10 @@ p.just-text {
     width: calc(100% - 2*var(--otstup));
     margin-left: var(--otstup);
     margin-top: var(--otstup);
-    background-color: #202020;
+    background-color: #d4cfcf;
     position: fixed;
     left: 0;
-    top: 0;
+    top:  100px;
     --otstup: 12px;
     display: flex;
     justify-content: space-between;
