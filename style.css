@@ -2,7 +2,7 @@
 
     font-family: "EurostileExt-Bold";
 
-    src: url("/EurostileExt-Bold.ttf") format("truetype");
+    src: url("EurostileExt-Bold.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
@@ -293,7 +293,7 @@ p.just-text {
     display: flex;
     justify-content: center;
     height: 583px;
-    background-image: url(/masthead_background_2600.webp);
+    background-image: url(masthead_background_2600.webp);
     background-size: 134%;
     background-position: -169px -262px;
     flex-direction: column;
