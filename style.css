@@ -1,3 +1,13 @@
+@font-face {
+
+    font-family: "EurostileExt-Bold";
+
+    src: url("/EurostileExt-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
 * {
     box-sizing: border-box;
 }
@@ -33,11 +43,12 @@ p.just-text {
 .пачкаКнопок {
     display: flex;
     gap: 18px;
+    align-items: center;
 }
 
 .fon1 {
     width: 100%;
-    height: 900px;
+    height: 600px;
 }
 
 .верхниеКнопки {
@@ -48,8 +59,6 @@ p.just-text {
     height: 40px;
     transition: background 0.0s;
     cursor: pointer;
-    /* position: relative; */
-    /* padding: 1px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,7 +70,6 @@ p.just-text {
 }
 
 .верхниеКнопки:active {
-    transform: scale(0.8);
     transition: 100ms;
 }
 
@@ -84,14 +92,29 @@ p.just-text {
 
 .BLIZZARD {
     color: #00aeff;
-    margin-left: 24px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+
 }
 
-.BLIZZARD:hover {
-    background: #202020;
+.менюСлева:hover .BLIZZARD  {
+  
     color: #55c9ff;
     border-radius: 5px;
-    height: 40px;
+
+}
+
+.BLIZZARDразмер {
+
+    height: 35px;
+
+}
+
+
+
+.верхниеКнопки:active {
+    transition: 100ms;
 }
 
 .заднийФон1 {
@@ -99,30 +122,228 @@ p.just-text {
 }
 
 
-
+.torn-edge {
+  clip-path: polygon(
+    0 0, 
+    100% 0, 
+    100% calc(100% - 20px), 
+    80% calc(100% - 10px), 
+    60% 100%, 
+    40% calc(100% - 15px), 
+    20% calc(100% - 5px), 
+    0 100%
+  );
+}
 
 .выпадающееМенюУчетка {
     visibility: hidden;
     opacity: 0;
     background-color: #202020;
     position: absolute;
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 250px;
     z-index: 10;
     top: 100%;
     text-align: center;
     padding: 10px;
     border-radius: 9px;
     box-shadow: 1px 1px 17px #00000096;
-    
     transition: 0.5s;
-    transition-delay: 1s;
+    transition-delay: 0.3s;
 }
+
 .особоеМеню {
     padding: 0px 10px;
+    padding-right: 2px;
+
 }
+
 .особоеМеню:hover .выпадающееМенюУчетка {
-   visibility: visible;
-   opacity: 1;
+    visibility: visible;
+    opacity: 1;
     transition-delay: 0s;
+}
+
+.менюСлева .выпадающееМенюУчетка {
+    left: 0%;
+}
+
+
+.менюСлева {
+    height: 60px;
+    display: flex;
+    align-items: center;
+        background: #161616;
+}
+
+.Авторизазия {
+
+    background-color: #00aeff;
+    font-size: 15px;
+    height: 40px;
+    border: 0px solid black;
+    border-radius: 5px;
+    width: 200px;
+    color: #ffffff;
+    padding: 1px 6px;
+    padding-right: 13px;
+
+    cursor: pointer;
+}
+
+.Авторизазия:hover {
+    border-radius: 5px;
+    background-color: #55c9ff;
+}
+
+.Авторизазия:active {
+    transition: 100ms;
+    transform: scale(0.8);
+}
+
+.Магаз {
+    color: rgb(255, 255, 255);
+
+
+}
+
+.Картинка2 {
+    width: 100%;
+    height: 900px;
+}
+
+.arrow-down {
+    stroke: #909090;
+    transform: scale(0.7);
+}
+
+.настройки {
+
+    height: 20px;
+    color: #c4c4c4;
+
+}
+
+.выпадающееМенюУчеткаFlex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.батл {
+    height: 20px;
+    color: #ffffff;
+}
+
+
+.FlexВкнопке1 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.кнопкавМеню {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    background-color: #202020;
+    color: #ffffff;
+    border: 0px solid black;
+    margin-top: 5px;
+    width: 220px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.кнопкавМеню:hover {
+    background-color: #bd1212;
+    background-color: #35363df2;
+    border-radius: 5px;
+}
+
+
+.СловоНастройки {
+    font-size: 14px;
+}
+
+.втораяСторона {
+
+    /*
+    background-color: #000000;
+    */
+}
+
+.картинкаЧубрика {
+
+    height: 40px;
+
+
+}
+
+
+
+.заднийФон1 {
+    display: flex;
+    justify-content: center;
+    height: 583px;
+    background-image: url(/masthead_background_2600.webp);
+    background-size: 134%;
+    background-position: -169px -262px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.СК2 {
+    height: 250px;
+}
+
+.бесконБитв {
+    color: white;
+    font-size: 37px;
+    width: 480px;
+    line-height: 110%;
+    text-align: center;
+    font-family: EurostileExt-Bold;
+}
+
+.Сетка {
+    background-image: url(https://blz-contentstack-images.akamaized.net/v3/assets/blt9c12f249ac15c7ec/blta6d7e0cc6f8ecd04/6758b7be65d1b13e90adc8df/grid_background_2600.webp);
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 119px;
+    gap: 41px;
+}
+
+.БольшойТекст {
+   
+    color: #ffffff;
+
+}
+
+.ВЕРНИТЕСЬ {
+    color: #ffffff;
+    margin-top: 0px;
+    font-family: EurostileExt-Bold;
+}
+
+.битвы {
+    font-family: EurostileExt-Bold;
+    width: 650px;
+    height: 350px;
+    border: 0px solid black;
+    border-radius: 20px;
+
+}
+
+.Family {
+    width: 400px;
 }
